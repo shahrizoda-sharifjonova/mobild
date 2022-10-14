@@ -223,6 +223,11 @@
         line-height: 22px;
         text-transform: uppercase;
         color: #FFE4CB;
+        transition: 300ms ease;
+        &:hover{
+            color: #CCB49E;
+            background: #97693E;
+        }
         @include media(768){
             height: 35px;
             font-size: 14px;

@@ -305,6 +305,14 @@
   line-height: 22px;
   text-transform: uppercase;
   color: #FFE4CB;
+  -webkit-transition: 300ms ease;
+  -o-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+.intro__btn:hover {
+  color: #CCB49E;
+  background: #97693E;
 }
 
 .intro__info {
