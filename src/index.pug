@@ -8,10 +8,24 @@ html(lang="en")
         title Document
     body 
         .wrapper 
-            include components/header 
-            +header 
-            include components/main 
-            +main 
-            include components/footer 
-            +footer
-        script(src="js/app.min.js") 
+            .intro 
+                .intro__left 
+                    .intro__left-body
+                        a(href="index.html").intro__logo.light
+                            img(src="@img/logo-light.png", alt="" draggable="false") 
+                        h1.intro__title turn you site into #[span source] of income
+                        p.intro__desc Estimated monthly income averages #[span between $2,697 and $3,797], corresponding to a #[span minimum ROI of 32%]
+                        .intro__img 
+                            img(src="@img/intro-img.png", alt="" draggable="false")
+                .intro__right 
+                    .intro__right-body 
+                        a(href="index.html").intro__logo.dark
+                            img(src="@img/logo-dark.png", alt="" draggable="false")
+                        p.intro__p Find out the cost and how much you can make
+                        form(action="#").intro__form
+                            input(type="text" placeholder="NAME").intro__input
+                            input(type="text" placeholder="PHONE").intro__input
+                            input(type="text" placeholder="E-MAIL").intro__input
+                            button(type="submit").intro__btn submit
+                        p.intro__info #[span State Regulations:] 450 sqm minimum land size required.
+        script(src="js/app.min.js")     
