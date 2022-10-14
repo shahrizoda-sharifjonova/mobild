@@ -561,3 +561,9 @@ button {
     margin-bottom: -25%;
   }
 }
+
+@media (max-height: 680px) {
+  body .intro__img {
+    display: none;
+  }
+}

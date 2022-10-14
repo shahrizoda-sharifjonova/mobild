@@ -14,6 +14,13 @@ html,
 body{
     height: 100%;
 }
+body{
+    @media(max-height: 680px){
+        .intro__img{
+            display: none;
+        }
+    }
+}
 .wrapper{
     min-height: 100%;
     display: flex;
